@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./Assets/CSS/index.css">
-    <script src="./Assets/JS/index.js"></script>
+    <script src="./Assets/JS/index.js" defer></script>
     <title>Age Calculator</title>
 </head>
 <body>
     <main class="mainContainer"> 
-        <form action="">
+        <form  method="">
         <div class="subContainer con1">
-            <div class="date">
-                <label for="days">DAY</label>
-                <input class="divs" id="days" type="number" placeholder="DD" required> 
-            </div>
-            <div class="date">
-                <label for="months">MONTH</label>
-                <input class="divs" id="months" type="number" placeholder="MM" required>
-            </div>
-            <div class="date">
-                <label for="years">YEAR</label>
-                <input class="divs" id="years" type="number" placeholder="YYYY" required>
-            </div>
+
+            <label  for="days"><span class="inputName">DAY</span> <br>
+                <input class="contain" id="days" type="number" placeholder="DD" required> 
+                <p class="fillIt" id="dayError">This field is required</p>
+            </label>
+
+            <label  for="months"><span class="inputName">MONTH</span> <br>
+                <input class="contain" id="months" type="number" placeholder="MM" required>
+                <p class="fillIt" id="monthError">This Field is required</p>
+            </label> 
+            
+            <label  for="years"><span class="inputName">YEAR</span> <br>
+                <input class="contain" id="years" type="number" placeholder="YYYY" required>
+                <p class="fillIt" id="yearError" >This field is required</p>
+            </label> 
         </div>
+            
         <div class="subContainer con2">
             <div id="hrr"></div>
              <button id="arrow"><img src="./Assets/IMG/icon-arrow.svg" alt=""></button>
@@ -31,9 +35,9 @@
         </form>
 
         <div class="subContainer con3">
-            <P><span>- -</span> years</P>
-            <P><span>- -</span> months</P>
-            <P><span>- -</span> days</P>
+            <P><span class="result" id="yearRes">- -</span> years</P>
+            <P><span class="result" id="monthRes">- -</span> months</P>
+            <P><span class="result" id="dayRes">- -</span> days</P>
         </div>
     </main>
 

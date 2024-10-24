@@ -28,14 +28,12 @@ html {
     margin: 0  auto;
     background: var(--bg-color2);
     border: none;
-    display: flex;
-    flex-direction: column;
     border-radius: 20px;
     border-bottom-right-radius: 20%;
   }
   .con1 {
     display: flex;
-    gap: 5px;
+    gap: 2px;
     width: 90%;
     padding-top: 30px ;
     margin:20px  auto 0 auto;
@@ -52,20 +50,19 @@ html {
     margin: auto;
   }
 
-  .date {
-    display: flex;
-    flex-direction: column;
+  .inputName {
+    margin-left: 10px;
   }
 
-  .date .divs{
+  .contain{
     border: var(--color4) solid 1px;
     border-radius: 7px;
-    height: 60px;
+    height: 50px;
     font-size: 15px;
     font-weight: 700 ;
     display: flex;
     padding-left: 10px;
-    width: 80%;
+    width: 70%;
     letter-spacing: normal;
     margin-top: 5px;
   }
@@ -119,6 +116,16 @@ html {
 
   .con3 span{
     color: var(--color2);
+  }
+
+  .fillIt {
+    font-size: 8px;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: var(--color5);
+    opacity: 1;
   }
 
 
@@ -194,38 +201,29 @@ html {
     margin: auto;
   }
 
-  .date {
-    display: flex;
-    flex-direction: column;
+  .inputName {
+    margin-left: 5px;
   }
 
-  .date:nth-of-type(2){
-    margin-left: -140px;
-  }
-  .date:nth-of-type(3){
-    margin-left: -140px;
-  }
-
-  .date .divs{
+  .contain{
     border: var(--color4) solid 1px;
     border-radius: 7px;
-    height: 60px;
+    height: 50px;
     font-size: 15px;
     font-weight: 700 ;
     display: flex;
     padding-left: 10px;
-    width: 40%;
+    width: 80%;
     letter-spacing: normal;
     margin-top: 5px;
     margin-left: 5px;
   }
-  .date .divs::placeholder{
+   .contain::placeholder{
     font-size: 20px;
     font-weight: 700 ;
   }
 
-  .date div:hover{
-    cursor: pointer;
+  .contain:hover{
     border: solid 1px var(--color2);
   }
 
@@ -281,7 +279,14 @@ html {
     color: var(--color2);
   }
 
-
+  .fillIt {
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 7px;
+    margin-left: 7px;
+    opacity: 0;
+  }
 
   footer{
     font-size: 13px;
